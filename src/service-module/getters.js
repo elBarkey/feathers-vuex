@@ -1,9 +1,10 @@
 import sift from 'sift'
-import commons from '@feathersjs/commons'
+// import commons from '@feathersjs/commons'
 import dbCommons from '@feathersjs/adapter-commons'
 import omit from 'lodash.omit'
+import { _ } from '@feathersjs/commons'
 
-const { _ } = commons
+// const { _ } = commons
 const { filterQuery, sorter, select } = dbCommons
 const FILTERS = [ '$sort', '$limit', '$skip', '$select' ]
 const OPERATORS = [ '$in', '$nin', '$lt', '$lte', '$gt', '$gte', '$ne', '$or' ]
